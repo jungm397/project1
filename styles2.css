@@ -1,0 +1,106 @@
+body {
+    background-color: blanchedalmond;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text-left {
+    text-align: left;
+    font-style: italic;
+    color: rgb(103, 51, 9);
+    font-size: 22px;
+}
+
+.text-right {
+    text-align: right;
+    color: rgb(103, 51, 9);
+    font-size: 30px;
+    line-height: 1.4;
+    max-width: 800px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.bold-text {
+    font-weight: 600;
+}
+
+
+h1, #bitter, #acidic {
+    font-size: 32px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    display: block;
+    animation: fadeInMove 1s ease-out forwards;
+}
+
+
+h1 {
+    font-weight: 400; 
+}
+
+
+.bold-text {
+    font-weight: 600 !important; 
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(103, 51, 9); 
+    transition: color 0.3s ease;
+}
+
+.clickable:hover {
+    color: rgb(150, 87, 35); 
+}
+
+.clickable-image {
+    width: 40px; 
+    height: auto;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); 
+}
+
+

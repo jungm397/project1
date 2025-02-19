@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coffee Nutrients</title>
+    <meta name="description" content="Nutritional content of coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100..900&family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+
+    <div class="text-top-left">
+        <p><i>The <span class="hover-effect">nutrients</span></i></p>
+        <p>One cup of</p>
+        <p>coffee contains</p>
+        <p>approximately:</p>
+    </div>
+
+    <div class="text-bottom-right">
+        <b>Riboflavin (B2)</b>
+        <span>0.2 mg (11% of the DV)</span><br>
+
+        <b>Potassium</b>
+        <span>115 mg (3% of the DV)</span><br>
+
+        <b>Magnesium</b>
+        <span>7 mg (2% of the DV)</span><br>
+
+        <b>Niacin (B3)</b>
+        <span>0.5 mg (3% of the DV)</span>
+    </div>
+
+    <a href="entry6.html">
+        <img src="bean.png" alt="Clickable PNG" class="clickable-image">
+    </a>
+    
+    <script>
+
+        const hoverEffect = document.querySelector(".hover-effect");
+        const bottomText = document.querySelector(".text-bottom-right");
+
+
+        hoverEffect.addEventListener("mouseenter", () => {
+            bottomText.classList.add("active");
+        });
+
+        hoverEffect.addEventListener("mouseleave", () => {
+            bottomText.classList.remove("active");
+        });
+    </script>
+
+</body>
+</html>

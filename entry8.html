@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles8.css">
+    </head>
+
+    <body>
+
+
+    <p class="static-text" onclick="handleClick()">They were</p>
+
+
+    <div class="often-container" id="oftenContainer"></div>
+
+
+    <p class="extra-text" id="extraText">referred to as</p>
+
+
+    <p class="wise-text" id="wiseText">“<i>Schools of the Wise</i>”.</p>
+
+    <script>
+        let clickCount = 0;
+
+        function handleClick() {
+            clickCount++;
+
+            if (clickCount === 1) {
+                let container = document.getElementById("oftenContainer");
+                container.innerHTML = ""; 
+                
+                for (let i = 0; i < 20; i++) { 
+                    let newWord = document.createElement("p");
+                    newWord.classList.add("often-text");
+                    newWord.innerText = "often";
+                    container.appendChild(newWord);
+                }
+            } else if (clickCount === 2) {
+                document.getElementById("extraText").style.display = "inline";
+            } else if (clickCount === 3) {
+                document.getElementById("wiseText").style.display = "inline";
+            }
+        }
+    </script>
+
+    </body>
+</html>

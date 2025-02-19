@@ -1,0 +1,77 @@
+body {
+    background-color: blanchedalmond;
+    transition: background-color 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 50px;
+    color: rgb(99, 48, 14);
+}
+
+
+h1, h2, h3, h4 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px 0;
+    margin-top: 0%;
+}
+
+
+strong {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+
+strong:hover {
+    color: white;
+}
+
+
+.sentence {
+    transition: color 0.5s ease;
+}
+
+
+body.hover-effect {
+    background-color: #5a3622;
+}
+
+
+.sentence.hovered {
+    color: blanchedalmond;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 80%; 
+}
+
+#not:hover {
+    color: red !important;
+}
+
+
+.clickable-image {
+    width: 40px; 
+    height: auto;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); 
+}
+
+
+

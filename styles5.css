@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(99, 48, 14);
+    font-family: "Poppins", sans-serif;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.text-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: blanchedalmond;
+    line-height: 1.1; 
+    margin-bottom: 0;
+}
+
+.text-top-left p {
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+.text-bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    color: blanchedalmond;
+}
+
+.text-bottom-right b {
+    display: block;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.text-bottom-right span {
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.text-top-left:hover ~ .text-bottom-right b:nth-of-type(1) { color: yellow; }
+.text-top-left:hover ~ .text-bottom-right span:nth-of-type(1) { color: yellow; }
+
+.text-top-left:hover ~ .text-bottom-right b:nth-of-type(2) { color: green; }
+.text-top-left:hover ~ .text-bottom-right span:nth-of-type(2) { color: green; }
+
+.text-top-left:hover ~ .text-bottom-right b:nth-of-type(3) { color: blue; }
+.text-top-left:hover ~ .text-bottom-right span:nth-of-type(3) { color: blue; }
+
+.text-top-left:hover ~ .text-bottom-right b:nth-of-type(4) { color: red; }
+.text-top-left:hover ~ .text-bottom-right span:nth-of-type(4) { color: red; }
+
+
+
+
+.hover-effect {
+    font-family: "Exo", sans-serif;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+
+.text-bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    font-family: "Exo", sans-serif;
+    font-variation-settings: "wght" 300;
+    transition: font-variation-settings 1s ease-out, color 0.5s ease-in-out;
+}
+
+
+.text-bottom-right.active {
+    font-variation-settings: "wght" 800;
+    color: white;
+}
+
+
+.clickable-image {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); 
+}
